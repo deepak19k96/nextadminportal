@@ -160,7 +160,7 @@ const TabSecurity = () => {
             xs={12}
             sx={{ display: 'flex', marginTop: [7.5, 2.5], alignItems: 'center', justifyContent: 'center' }}
           >
-            <img width={183} alt='avatar' height={256} src='/images/pages/pose-m-1.png' />
+            <img draggable={false} width={183} alt='avatar' height={256} src='/images/pages/pose-m-1.png' />
           </Grid>
         </Grid>
       </CardContent>
@@ -199,10 +199,8 @@ const TabSecurity = () => {
           </Box>
         </Box>
 
-        <Box sx={{ mt: 11 }}>
-          <Button variant='contained' sx={{ marginRight: 3.5 }}>
-            Save Changes
-          </Button>
+        <Box sx={{ display: 'flex', gap: 3, flexWrap: 'wrap', mt: 11 }}>
+          <Button variant='contained'>Save Changes</Button>
           <Button
             type='reset'
             variant='outlined'
